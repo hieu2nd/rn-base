@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* TemplateAdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TemplateAdTests.m */; };
+		00E356F31AD99517003FC87E /* RNBaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RNBaseTests.m */; };
 		0A028A62FBD443D484FB14FA /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 659332AE261540B1991375CB /* Poppins-Light.ttf */; };
-		0C80B921A6F3F58F76C31292 /* libPods-TemplateAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-TemplateAd.a */; };
+		0C80B921A6F3F58F76C31292 /* libPods-RNBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-RNBase.a */; };
 		0CDD39EA7B1C44AC8F5AB25D /* PingFang-SC-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8289D602A8D54A65BB973EA6 /* PingFang-SC-Bold.ttf */; };
 		1143BE5DF1E54AB88BDC8F68 /* Barlow-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6C117B6F55F4E47B142A197 /* Barlow-LightItalic.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
@@ -31,7 +31,7 @@
 		70F4C95CCCE241719F65A177 /* Barlow-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EB379223B2F469A9D247558 /* Barlow-Italic.ttf */; };
 		710C81567CC748E29B964116 /* Barlow-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498BD69FB63B4F63ABEDD99B /* Barlow-Regular.ttf */; };
 		71CF4EE190704BB1B9779349 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6557DC9F7C27406BA47505AD /* Poppins-Black.ttf */; };
-		7699B88040F8A987B510C191 /* libPods-TemplateAd-TemplateAdTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-TemplateAd-TemplateAdTests.a */; };
+		7699B88040F8A987B510C191 /* libPods-RNBase-RNBaseTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-RNBase-RNBaseTests.a */; };
 		77A38B38E16540D290850CFD /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F84D93E0820E49D4A38D32A4 /* Poppins-Regular.ttf */; };
 		7835189FD23A4EE180B5BFA6 /* Barlow-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36F334057D794A26A76142B8 /* Barlow-Light.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
@@ -51,39 +51,39 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = TemplateAd;
+			remoteInfo = "RNBase";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* TemplateAdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TemplateAdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* RNBaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RNBaseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* TemplateAdTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TemplateAdTests.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* RNBaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RNBaseTests.m"; sourceTree = "<group>"; };
 		0EB379223B2F469A9D247558 /* Barlow-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-Italic.ttf"; path = "../src/assets/fonts/Barlow-Italic.ttf"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* TemplateAd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemplateAd.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = TemplateAd/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = TemplateAd/AppDelegate.mm; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TemplateAd/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TemplateAd/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TemplateAd/main.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* RNBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RNBase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "RNBase/AppDelegate.h"; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = "RNBase/AppDelegate.mm"; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "RNBase/Images.xcassets"; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "RNBase/Info.plist"; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "RNBase/main.m"; sourceTree = "<group>"; };
 		14931F5B46BF43D1B6CC428D /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../src/assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		188E7F3544DE4A4EB99054B7 /* PingFang-SC-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PingFang-SC-Thin.ttf"; path = "../src/assets/fonts/PingFang-SC-Thin.ttf"; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-TemplateAd-TemplateAdTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TemplateAd-TemplateAdTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19F6CBCC0A4E27FBF8BF4A61 /* libPods-RNBase-RNBaseTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNBase-RNBaseTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D6FEBAAFD84BD493CAB2D0 /* Barlow-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-Thin.ttf"; path = "../src/assets/fonts/Barlow-Thin.ttf"; sourceTree = "<group>"; };
 		36F334057D794A26A76142B8 /* Barlow-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-Light.ttf"; path = "../src/assets/fonts/Barlow-Light.ttf"; sourceTree = "<group>"; };
-		3B4392A12AC88292D35C810B /* Pods-TemplateAd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateAd.debug.xcconfig"; path = "Target Support Files/Pods-TemplateAd/Pods-TemplateAd.debug.xcconfig"; sourceTree = "<group>"; };
+		3B4392A12AC88292D35C810B /* Pods-RNBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNBase.debug.xcconfig"; path = "Target Support Files/Pods-RNBase/Pods-RNBase.debug.xcconfig"; sourceTree = "<group>"; };
 		470E581F8E3247B7A94901D6 /* Barlow-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-Black.ttf"; path = "../src/assets/fonts/Barlow-Black.ttf"; sourceTree = "<group>"; };
 		498BD69FB63B4F63ABEDD99B /* Barlow-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-Regular.ttf"; path = "../src/assets/fonts/Barlow-Regular.ttf"; sourceTree = "<group>"; };
 		50D02B2DC86848FD9D74472E /* Barlow-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-ExtraBold.ttf"; path = "../src/assets/fonts/Barlow-ExtraBold.ttf"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-TemplateAd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateAd.release.xcconfig"; path = "Target Support Files/Pods-TemplateAd/Pods-TemplateAd.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-TemplateAd-TemplateAdTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateAd-TemplateAdTests.debug.xcconfig"; path = "Target Support Files/Pods-TemplateAd-TemplateAdTests/Pods-TemplateAd-TemplateAdTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-TemplateAd.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TemplateAd.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5709B34CF0A7D63546082F79 /* Pods-RNBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNBase.release.xcconfig"; path = "Target Support Files/Pods-RNBase/Pods-RNBase.release.xcconfig"; sourceTree = "<group>"; };
+		5B7EB9410499542E8C5724F5 /* Pods-RNBase-RNBaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNBase-RNBaseTests.debug.xcconfig"; path = "Target Support Files/Pods-RNBase-RNBaseTests/Pods-RNBase-RNBaseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5DCACB8F33CDC322A6C60F78 /* libPods-RNBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNBase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6557DC9F7C27406BA47505AD /* Poppins-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Black.ttf"; path = "../src/assets/fonts/Poppins-Black.ttf"; sourceTree = "<group>"; };
 		659332AE261540B1991375CB /* Poppins-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Light.ttf"; path = "../src/assets/fonts/Poppins-Light.ttf"; sourceTree = "<group>"; };
 		7F64D57BC0D041F29590B622 /* Barlow-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-ExtraLight.ttf"; path = "../src/assets/fonts/Barlow-ExtraLight.ttf"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TemplateAd/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "RNBase/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		8289D602A8D54A65BB973EA6 /* PingFang-SC-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PingFang-SC-Bold.ttf"; path = "../src/assets/fonts/PingFang-SC-Bold.ttf"; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-TemplateAd-TemplateAdTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateAd-TemplateAdTests.release.xcconfig"; path = "Target Support Files/Pods-TemplateAd-TemplateAdTests/Pods-TemplateAd-TemplateAdTests.release.xcconfig"; sourceTree = "<group>"; };
+		89C6BE57DB24E9ADA2F236DE /* Pods-RNBase-RNBaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNBase-RNBaseTests.release.xcconfig"; path = "Target Support Files/Pods-RNBase-RNBaseTests/Pods-RNBase-RNBaseTests.release.xcconfig"; sourceTree = "<group>"; };
 		8DB103E450A74EE3A1A78B61 /* Barlow-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-BlackItalic.ttf"; path = "../src/assets/fonts/Barlow-BlackItalic.ttf"; sourceTree = "<group>"; };
 		9F30EF50720B48CBB320DA9A /* Barlow-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-ExtraLightItalic.ttf"; path = "../src/assets/fonts/Barlow-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		9F91AE06637349C48CA8693E /* Barlow-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Barlow-Bold.ttf"; path = "../src/assets/fonts/Barlow-Bold.ttf"; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-TemplateAd-TemplateAdTests.a in Frameworks */,
+				7699B88040F8A987B510C191 /* libPods-RNBase-RNBaseTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,20 +117,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-TemplateAd.a in Frameworks */,
+				0C80B921A6F3F58F76C31292 /* libPods-RNBase.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* TemplateAdTests */ = {
+		00E356EF1AD99517003FC87E /* RNBaseTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* TemplateAdTests.m */,
+				00E356F21AD99517003FC87E /* RNBaseTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = TemplateAdTests;
+			path = "RNBaseTests";
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -141,7 +141,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* TemplateAd */ = {
+		13B07FAE1A68108700A75B9A /* RNBase */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -151,15 +151,15 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = TemplateAd;
+			name = "RNBase";
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-TemplateAd.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-TemplateAd-TemplateAdTests.a */,
+				5DCACB8F33CDC322A6C60F78 /* libPods-RNBase.a */,
+				19F6CBCC0A4E27FBF8BF4A61 /* libPods-RNBase-RNBaseTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -175,9 +175,9 @@
 			isa = PBXGroup;
 			children = (
 				A49979BD28E6CD8D00FF9C88 /* Config.xcconfig */,
-				13B07FAE1A68108700A75B9A /* TemplateAd */,
+				13B07FAE1A68108700A75B9A /* RNBase */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* TemplateAdTests */,
+				00E356EF1AD99517003FC87E /* RNBaseTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -191,8 +191,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* TemplateAd.app */,
-				00E356EE1AD99517003FC87E /* TemplateAdTests.xctest */,
+				13B07F961A680F5B00A75B9A /* RNBase.app */,
+				00E356EE1AD99517003FC87E /* RNBaseTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,10 +200,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-TemplateAd.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-TemplateAd.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-TemplateAd-TemplateAdTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-TemplateAd-TemplateAdTests.release.xcconfig */,
+				3B4392A12AC88292D35C810B /* Pods-RNBase.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-RNBase.release.xcconfig */,
+				5B7EB9410499542E8C5724F5 /* Pods-RNBase-RNBaseTests.debug.xcconfig */,
+				89C6BE57DB24E9ADA2F236DE /* Pods-RNBase-RNBaseTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -246,9 +246,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* TemplateAdTests */ = {
+		00E356ED1AD99517003FC87E /* RNBaseTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "TemplateAdTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RNBaseTests" */;
 			buildPhases = (
 				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -262,14 +262,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = TemplateAdTests;
-			productName = TemplateAdTests;
-			productReference = 00E356EE1AD99517003FC87E /* TemplateAdTests.xctest */;
+			name = "RNBaseTests";
+			productname = "RNBaseTests";
+			productReference = 00E356EE1AD99517003FC87E /* RNBaseTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* TemplateAd */ = {
+		13B07F861A680F5B00A75B9A /* RNBase */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TemplateAd" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RNBase" */;
 			buildPhases = (
 				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -285,9 +285,9 @@
 			);
 			dependencies = (
 			);
-			name = TemplateAd;
-			productName = TemplateAd;
-			productReference = 13B07F961A680F5B00A75B9A /* TemplateAd.app */;
+			name = "RNBase";
+			productName = "RNBase";
+			productReference = 13B07F961A680F5B00A75B9A /* RNBase.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -307,7 +307,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "TemplateAd" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RNBase" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -320,8 +320,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* TemplateAd */,
-				00E356ED1AD99517003FC87E /* TemplateAdTests */,
+				13B07F861A680F5B00A75B9A /* RNBase */,
+				00E356ED1AD99517003FC87E /* RNBaseTests */,
 			);
 		};
 /* End PBXProject section */
@@ -397,15 +397,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TemplateAd/Pods-TemplateAd-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RNBase/Pods-RNBase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TemplateAd/Pods-TemplateAd-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RNBase/Pods-RNBase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TemplateAd/Pods-TemplateAd-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNBase/Pods-RNBase-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
@@ -423,7 +423,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TemplateAd-TemplateAdTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RNBase-RNBaseTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -445,7 +445,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TemplateAd-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RNBase-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -458,15 +458,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TemplateAd-TemplateAdTests/Pods-TemplateAd-TemplateAdTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RNBase-RNBaseTests/Pods-RNBase-RNBaseTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TemplateAd-TemplateAdTests/Pods-TemplateAd-TemplateAdTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RNBase-RNBaseTests/Pods-RNBase-RNBaseTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TemplateAd-TemplateAdTests/Pods-TemplateAd-TemplateAdTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNBase-RNBaseTests/Pods-RNBase-RNBaseTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D685CD939D93D4CFF86D8175 /* [CP-User] [RNFB] Core Configuration */ = {
@@ -488,15 +488,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TemplateAd/Pods-TemplateAd-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RNBase/Pods-RNBase-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TemplateAd/Pods-TemplateAd-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RNBase/Pods-RNBase-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TemplateAd/Pods-TemplateAd-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNBase/Pods-RNBase-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
@@ -505,15 +505,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TemplateAd-TemplateAdTests/Pods-TemplateAd-TemplateAdTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RNBase-RNBaseTests/Pods-RNBase-RNBaseTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TemplateAd-TemplateAdTests/Pods-TemplateAd-TemplateAdTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RNBase-RNBaseTests/Pods-RNBase-RNBaseTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TemplateAd-TemplateAdTests/Pods-TemplateAd-TemplateAdTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNBase-RNBaseTests/Pods-RNBase-RNBaseTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -542,7 +542,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* TemplateAdTests.m in Sources */,
+				00E356F31AD99517003FC87E /* RNBaseTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,7 +560,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* TemplateAd */;
+			target = 13B07F861A680F5B00A75B9A /* RNBase */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -568,14 +568,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-TemplateAd-TemplateAdTests.debug.xcconfig */;
+			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-RNBase-RNBaseTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = TemplateAdTests/Info.plist;
+				INFOPLIST_FILE = "RNBaseTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -589,17 +589,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TemplateAd.app/TemplateAd";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNBase.app/RNBase";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-TemplateAd-TemplateAdTests.release.xcconfig */;
+			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-RNBase-RNBaseTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = TemplateAdTests/Info.plist;
+				INFOPLIST_FILE = "RNBaseTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -613,13 +613,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TemplateAd.app/TemplateAd";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNBase.app/RNBase";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-TemplateAd.debug.xcconfig */;
+			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-RNBase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -628,7 +628,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T5C8JTGRDX;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = TemplateAd/Info.plist;
+				INFOPLIST_FILE = "RNBase/Info.plist";
+             INFOPLIST_KEY_CFBundleDisplayName = "RNBase";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -639,7 +640,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.andy.rnbase;
-				PRODUCT_NAME = TemplateAd;
+				PRODUCT_NAME = "RNBase";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -649,7 +650,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-TemplateAd.release.xcconfig */;
+			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-RNBase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -657,7 +658,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T5C8JTGRDX;
-				INFOPLIST_FILE = TemplateAd/Info.plist;
+				INFOPLIST_FILE = "RNBase/Info.plist";
+             INFOPLIST_KEY_CFBundleDisplayName = "RNBase";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -668,7 +670,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.andy.rnbase;
-				PRODUCT_NAME = TemplateAd;
+				PRODUCT_NAME = "RNBase";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -815,7 +817,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "TemplateAdTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RNBaseTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -824,7 +826,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TemplateAd" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RNBase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -833,7 +835,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "TemplateAd" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RNBase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

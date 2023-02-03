@@ -1,5 +1,5 @@
 {
-  "name": "TemplateAd",
+  "name": "rnbase",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -14,12 +14,12 @@
     "aab": "cd android && ./gradlew clean && ./gradlew bundleRelease && cd ..",
     "reverse": "adb reverse tcp:9090 tcp:9090; adb reverse tcp:19001 tcp:19001;",
     "pod": "cd ios && pod install && cd ..",
-    "createAppCenterAndroid": "appcenter apps create -d TemplateAd -o Android -p React-Native",
-    "createAppCenterIOS": "appcenter apps create -d TemplateAd -o iOS -p React-Native",
-    "codePushStagging": "appcenter codepush release-react -a cao.tran-adamosoft.com/TemplateAd-1 -d Staging",
-    "codePushRelease": "appcenter codepush release-react -a cao.tran-adamosoft.com/TemplateAd-1 -d Production",
-    "codePushReleaseAndroid": "appcenter codepush release-react -a cao.tran-adamosoft.com/TemplateAd -d Production",
-    "codePushStagingAndroid": "appcenter codepush release-react -a cao.tran-adamosoft.com/TemplateAd -d Staging",
+    "createAppCenterAndroid": "appcenter apps create -d rnbase -o Android -p React-Native",
+    "createAppCenterIOS": "appcenter apps create -d rnbase -o iOS -p React-Native",
+    "codePushStagging": "appcenter codepush release-react -a cao.tran-adamosoft.com/rnbase-1 -d Staging",
+    "codePushRelease": "appcenter codepush release-react -a cao.tran-adamosoft.com/rnbase-1 -d Production",
+    "codePushReleaseAndroid": "appcenter codepush release-react -a cao.tran-adamosoft.com/rnbase -d Production",
+    "codePushStagingAndroid": "appcenter codepush release-react -a cao.tran-adamosoft.com/rnbase -d Staging",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx --fix",
     "preci": "rm -fr node_modules",
     "ci": "yarn install --frozen-lockfile"
