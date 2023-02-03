@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Animated, Button, FlatList, PanResponder, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { Box, useTheme } from '@theme';
-import { AppButton, AppInput, AppScrollWrapBottomTab, GlobalService, LargeList, VirtualList } from '@components';
+import { AppButton, AppInput, AppScrollWrapBottomTab, GlobalService, LargeList, SwipeList, VirtualList } from '@components';
 import { AppchangeLanguage } from '@instances';
 import { ENUM_LANGUAGE } from '@translations';
 import { useTranslation } from 'react-i18next';
@@ -42,40 +42,22 @@ const DATA = [
   { id: 8, text: 'Card #8', uri: LINK, color: 'white' },
 ];
 const Home = () => {
-  const panResponder = React.useRef(
-    PanResponder.create({
-      onStartShouldSetPanResponder: (evt, gestureState) => true,
-      onPanResponderMove: (evt, gestureState) => {
-        reactotron.log!(evt,gestureState)
-      },
-      onPanResponderRelease: (evt, gestureState) => {
-      },
-    }),
-  ).current;
-  const renderCard = (item: any, index: number) => {
+  const renderCard = (item: any) => {
     return (
-      <View {...panResponder.panHandlers} key={JSON.stringify(item)} style={{ position: 'absolute', zIndex: DATA.length - (index) }} >
-        <FastImage style={{ width: DEVICE.width, aspectRatio: 3 / 4, alignItems: 'center', justifyContent: 'center' }} source={{ uri: item.uri }}>
-          <Text style={{
-            fontSize: 20,
-            color: item.color
-          }} children={item.text} />
+      <>
+        <FastImage style={{ height: 500, alignItems: 'center', justifyContent: 'center' }} source={{ uri: item.uri }}>
+          <Text style={{ color: item.color, fontSize: 20 }} children={item.text} />
         </FastImage>
-      </View>
+      </>
     )
   }
   return (
     <AppScrollWrapBottomTab isHeightStatus>
       <>
-        {DATA.map((item, index) => {
-          return (
-            renderCard(item, index)
-          )
-        })}
-        {/* <FlatList
+      <SwipeList
           data={DATA}
           renderItem={renderCard}
-        /> */}
+        />
       </>
     </AppScrollWrapBottomTab>
   );
