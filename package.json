@@ -21,7 +21,7 @@
     "codePushReleaseAndroid": "appcenter codepush release-react -a cao.tran-adamosoft.com/rnbase -d Production",
     "codePushStagingAndroid": "appcenter codepush release-react -a cao.tran-adamosoft.com/rnbase -d Staging",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx --fix",
-    "preci": "rm -fr node_modules",
+    "preci": "rm -rf node_modules",
     "ci": "yarn install --frozen-lockfile"
   },
   "dependencies": {

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Animated, Button, FlatList, PanResponder, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Button, FlatList, PanResponder, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { Box, useTheme } from '@theme';
 import { AppButton, AppInput, AppScrollWrapBottomTab, GlobalService, LargeList, SwipeList, VirtualList } from '@components';
 import { AppchangeLanguage } from '@instances';
@@ -10,6 +10,8 @@ import reactotron from 'reactotron-react-native';
 import { DEVICE } from '@utils';
 import { Card, Button as Btn } from '@rneui/themed';
 import FastImage from 'react-native-fast-image';
+import Svg, { Circle, Line, Rect } from 'react-native-svg';
+import Animated, { Easing, interpolate, multiply, useAnimatedGestureHandler, useAnimatedProps, useSharedValue, withTiming } from 'react-native-reanimated';
 const data = [{
   name: 1,
   id: 1,
@@ -42,6 +44,16 @@ const DATA = [
   { id: 8, text: 'Card #8', uri: LINK, color: 'white' },
 ];
 const Home = () => {
+  const AnimatedCircle = Animated.createAnimatedComponent(Circle)
+  const AnimatedLine = Animated.createAnimatedComponent(Rect)
+  const CIRCLE_LENGTH = 1000; // 2PI*R
+  const R = CIRCLE_LENGTH / (2 * Math.PI);
+  const size = DEVICE.width
+  const progress = useSharedValue(0);
+  const alpha = interpolate(progress.value, [0, 1], [0, Math.PI * 2])
+  const animatedProps = useAnimatedProps(() => ({
+    strokeDashoffset: CIRCLE_LENGTH * (1 - progress.value),
+  }))
   const renderCard = (item: any) => {
     return (
       <>
@@ -51,19 +63,77 @@ const Home = () => {
       </>
     )
   }
+  const x = useSharedValue(0);
+  const gestureHandler = useAnimatedGestureHandler({
+    onStart: (_, ctx) => {
+      ctx.startX = x.value;
+    },
+    onActive: (event, ctx) => {
+    },
+    onEnd: (event, ctx) => {
+
+    },
+  });
+  useEffect(() => {
+    progress.value = withTiming(1, { duration: 10000, easing: Easing.linear })
+  }, [])
   return (
     <AppScrollWrapBottomTab isHeightStatus>
       <>
-      <SwipeList
+        {/* <SwipeList
           data={DATA}
           renderItem={renderCard}
-        />
+        /> */}
+        <View style={styles.container}>
+          <Svg width={size} height={size}>
+            {/* <AnimatedCircle
+              stroke="white"
+              fill={"none"}
+              cx={size / 2}
+              cy={size / 2}
+              r={R}
+              strokeWidth={15}
+              strokeDasharray={1000}
+              animatedProps={animatedProps}
+            /> */}
+            <AnimatedLine
+              x={100}
+              y={size / 2}
+              width={size / 2}
+              strokeWidth={10}
+              rx={50}
+              ry={50}
+              stroke="red"
+              fill={"none"}
+              strokeDasharray={1000}
+            />
+            <AnimatedLine
+              x={100}
+              y={size / 2}
+              width={size / 2}
+              strokeWidth={10}
+              rx={50}
+              ry={50}
+              stroke="white"
+              fill={"none"}
+              strokeDasharray={1000}
+              animatedProps={animatedProps}
+            />
+            <View style={[{ position: 'absolute', width: 20, height: 20, borderRadius: 10, backgroundColor: 'red', top: size / 2 - 10, left: 90 }]} />
+          </Svg>
+        </View>
+
       </>
     </AppScrollWrapBottomTab>
   );
 };
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   btn1: { marginBottom: 20 },
 });
 
