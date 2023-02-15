@@ -11,7 +11,8 @@ import { DEVICE } from '@utils';
 import { Card, Button as Btn } from '@rneui/themed';
 import FastImage from 'react-native-fast-image';
 import Svg, { Circle, Line, Rect } from 'react-native-svg';
-import Animated, { Easing, interpolate, multiply, useAnimatedGestureHandler, useAnimatedProps, useSharedValue, withTiming } from 'react-native-reanimated';
+import Animated, { Easing, interpolate, multiply, useAnimatedGestureHandler, useAnimatedProps, useDerivedValue, useSharedValue, withTiming } from 'react-native-reanimated';
+import { ReText } from 'react-native-redash'
 const data = [{
   name: 1,
   id: 1,
@@ -45,15 +46,16 @@ const DATA = [
 ];
 const Home = () => {
   const AnimatedCircle = Animated.createAnimatedComponent(Circle)
-  const AnimatedLine = Animated.createAnimatedComponent(Rect)
+  const AnimatedLine = Animated.createAnimatedComponent(Line)
   const CIRCLE_LENGTH = 1000; // 2PI*R
   const R = CIRCLE_LENGTH / (2 * Math.PI);
   const size = DEVICE.width
   const progress = useSharedValue(0);
   const alpha = interpolate(progress.value, [0, 1], [0, Math.PI * 2])
   const animatedProps = useAnimatedProps(() => ({
-    strokeDashoffset: CIRCLE_LENGTH * (1 - progress.value),
+    strokeDashoffset: size * (1 - progress.value),
   }))
+  const progressText = useDerivedValue(() => `${size * (progress.value)}`)
   const renderCard = (item: any) => {
     return (
       <>
@@ -84,6 +86,7 @@ const Home = () => {
           data={DATA}
           renderItem={renderCard}
         /> */}
+        <ReText text={progressText} style={{ fontSize: 20, color: 'white' }} />
         <View style={styles.container}>
           <Svg width={size} height={size}>
             {/* <AnimatedCircle
@@ -96,7 +99,7 @@ const Home = () => {
               strokeDasharray={1000}
               animatedProps={animatedProps}
             /> */}
-            <AnimatedLine
+            {/* <AnimatedLine
               x={100}
               y={size / 2}
               width={size / 2}
@@ -106,21 +109,22 @@ const Home = () => {
               stroke="red"
               fill={"none"}
               strokeDasharray={1000}
-            />
+            /> */}
             <AnimatedLine
-              x={100}
-              y={size / 2}
-              width={size / 2}
+              x1="0"
+              y1="50"
+              x2={size}
+              y2="50"
               strokeWidth={10}
-              rx={50}
-              ry={50}
               stroke="white"
               fill={"none"}
-              strokeDasharray={1000}
-              animatedProps={animatedProps}
+              strokeDasharray={size}
+              // strokeDashoffset={size / 2}
+            animatedProps={animatedProps}
             />
-            <View style={[{ position: 'absolute', width: 20, height: 20, borderRadius: 10, backgroundColor: 'red', top: size / 2 - 10, left: 90 }]} />
+            {/* <View style={[{ position: 'absolute', width: 20, height: 20, borderRadius: 10, backgroundColor: 'red', top: size / 2 - 10, left: 0 }]} /> */}
           </Svg>
+          <View style={{ width: size / 2, height: 10, backgroundColor: 'red' }} />
         </View>
 
       </>
@@ -131,8 +135,8 @@ const Home = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    // justifyContent: 'center',
+    // alignItems: 'center',
   },
   btn1: { marginBottom: 20 },
 });
